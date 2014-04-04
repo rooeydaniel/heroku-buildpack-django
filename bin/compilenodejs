@@ -203,3 +203,7 @@ if [ -d $CACHE_TARGET_DIR ]; then
   mkdir -p $(dirname $CACHE_STORE_DIR)
   cp -a $CACHE_TARGET_DIR $CACHE_STORE_DIR
 fi
+
+# Install bower dependencies
+echo "------> Installing bower dependencies"
+./lib/node_modules/bower/bin/bower install
