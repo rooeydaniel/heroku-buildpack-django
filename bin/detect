@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
+echo "Detecting a requirements.txt file..."
+
 BUILD_DIR=$1
 [ -f $BUILD_DIR/requirements.txt ] || exit 1 # fail fast if no requirements.txt
 
